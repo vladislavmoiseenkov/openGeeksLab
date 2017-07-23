@@ -1,0 +1,37 @@
+<div class="row toolbar">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <a href="#!/add" class="addBTN">
+            <img src="img/addBtn.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <h3 class="text-center">Groceries</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 doneBTN">
+        <a href="#" ng-click="done()">
+            Done
+        </a>
+    </div>
+</div>
+<div class="row list" ng-repeat="item in list track by $index">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 removeBtn" ng-show="item.edit === true">
+        <a href="#" ng-click="remove($index)">
+            <img src="img/noEntry.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 itemList">
+        <h3>{{ item.name }}</h3>
+    </div>
+</div>
+<div class="row footer">
+    <div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2">
+        <a href="#!/">
+            <img src="img/list_icon_active.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+    <div class="col-lg-offset-4 col-lg-2 col-md-offset-4 col-md-2 col-sm-offset-4 col-sm-2 col-xs-offset-4 col-xs-2">
+        <a href="#!/cart">
+            <img src="img/cart_icon_inactive.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+</div>

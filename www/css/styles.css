@@ -1,0 +1,118 @@
+.navigation-bar .row {
+  background-color: #f9f9f9;
+}
+
+.navigation-bar .network-signal {
+  height: 6px;
+}
+
+.navigation-bar .wifiConnect {
+  margin-top: 4px;
+}
+
+.navigation-bar p {
+  margin: 0;
+}
+
+.navigation-bar .BTIndicator,
+.navigation-bar .batteryIndicator {
+  height: 10px;
+  margin-top: 5px;
+}
+
+.navigation-bar .batteryIndicator {
+  margin-left: 5px;
+}
+
+.toolbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d5d6d6;
+}
+
+.toolbar .editBTN,
+.toolbar .settingsBTN {
+  display: table;
+  margin-top: 10px;
+}
+
+.list.row {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #d5d6d6;
+}
+
+.homeBtn,
+.cartBtn {
+  background-color: #e6e7e8;
+  height: 56px;
+}
+
+.homeBtn a,
+.cartBtn a {
+  display: table;
+  margin-top: 15px;
+}
+
+.homeBtn a img,
+.cartBtn a img {
+  height: 30px;
+}
+
+.delBtn {
+  background-color: #cc0000;
+  height: 56px;
+  line-height: 56px;
+}
+
+.delBtn a {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 15px 0;
+}
+
+.footer a {
+  display: table;
+}
+
+a.addBTN {
+  display: table;
+  margin-top: 20px;
+}
+
+.removeBtn {
+  height: 56px;
+}
+
+.removeBtn a {
+  display: table;
+  margin-top: 10px;
+}
+
+.doneBTN,
+.cancelBtn {
+  line-height: 62px;
+}
+
+.doneBTN a,
+.cancelBtn a {
+  color: #333333;
+  font-size: 22px;
+}
+
+.addInput {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-left: none;
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  margin-top: 20px;
+  outline: none;
+}
+
+.addInput:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}

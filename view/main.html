@@ -1,0 +1,42 @@
+<div class="row toolbar">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <a href="#" class="settingsBTN">
+            <img src="img/settings_icon.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <h3 class="text-center">Groceries</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+        <a href="#!/edit" class="editBTN">
+            <img src="img/edit_icon_active.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+</div>
+<div class="row list" ng-repeat="item in list track by $index">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cartBtn" ng-show="item.cartBtn === true">
+        <a href="#" ng-click="addToCart($index)">
+            <img src="img/cart_icon_50px.png" class="img-responsive" alt="">
+        </a>
+    </div>
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 itemList" data-ng-swipe-left="swipeLeft($index)" data-ng-swipe-right="swipeRight($index)">
+        <h3>{{ item.name }}</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 homeBtn" ng-show="item.homeBtn === true">
+        <a href="#">
+            <img src="img/home_icon_46px.png" class="img-responsive" alt="">
+        </a>
+    </div>
+</div>
+<div class="row footer">
+    <div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2">
+        <a href="#!/">
+            <img src="img/list_icon_active.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+    <div class="col-lg-offset-4 col-lg-2 col-md-offset-4 col-md-2 col-sm-offset-4 col-sm-2 col-xs-offset-4 col-xs-2">
+        <a href="#!/cart">
+            <img src="img/cart_icon_inactive.png" class="img-responsive center-block" alt="">
+        </a>
+    </div>
+</div>
